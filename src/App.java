@@ -11,5 +11,9 @@ public class App {
         frame.setLocationRelativeTo(frame);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        Snakegame snakegame =  new Snakegame(boardWidth, boardHeight);
+        frame.add(snakegame);
+        frame.pack();
     }
 }
